@@ -8,7 +8,7 @@ exports.getWeekDay = function (){
     };
 
     
-    return today.toLocaleDateString("en-EN", options);
+    return today.toLocaleDateString("es-ES", options);
 };
 
 exports.getDay = function (){
@@ -17,7 +17,7 @@ exports.getDay = function (){
         weekday: "long"
     };
 
-    return today.toLocaleDateString("en-EN", options);
+    return today.toLocaleDateString("es-ES", options);
  
 };
 

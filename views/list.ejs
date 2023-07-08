@@ -1,22 +1,22 @@
 <%- include("header");  -%>
 
-        <% if (listTitle === "Sunday" || listTitle === "Saturday") { %>
-             <h1>To Do list <%= listTitle %></h1>
-        <% }else{ %>
-             <h1>To Do list <%= listTitle %></h1>
-        <% } %>
+     
+             <h1><%= listTitle %></h1>
+    
 
         <form class="itemForm" method="post" action="/">
-            <input type="text" name="item" autocomplete="off">
+            <input type="text" id="item" name="item" autocomplete="off" required>
+           
             <button type="submit" name="listForm" value="<%= listTitle %>">+</button>
         </form>
 
 
         <div class="boxitems">
-            <% for(const item of listOfItems){ %>
-                <input type="checkbox">
-                <p><%= item %></p>
-            <% } %>
+            <% listOfItems.forEach(function(item){ %>
+                <input type="checkbox" value="<%= item.id %>">
+                <input type="hidden" id="listName" name="listName" value="<%= listTitle %>">
+                <p><%= item.name %></p>
+            <% }) %>
             
         <div>
 
