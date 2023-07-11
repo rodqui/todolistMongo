@@ -12,7 +12,7 @@ const port = 3000;
 const dirname = __dirname;
 
 //BD
-const uri = "mongodb://127.0.0.1:27017/todolistDB";
+const uri = "mongodb+srv://test:labolita123@cluster0.glhjx3l.mongodb.net/todolistDB";
 mongoose.connect(uri);
 
 //Create a new schema
