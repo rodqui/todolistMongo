@@ -18,7 +18,7 @@ $("input:checkbox").on("click", function(){
             if(data==='Hoy'){
                 window.location.reload();
             }else{
-                window.location.replace("http://localhost:3000/category/"+data);
+                window.location.replace("/category/"+data);
             }
             
            
